@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div id="output">
+            <input id="text" type="text">
+        </div>
+
+
+        <button  class="operator"  onclick="backspace()" id="backspace"  >C</button>
+        <button  class="operator"  onclick="clearBox()" id="clear" >AC</button>
+        <button  class="operator"  onclick="displayNum('%')"id="mod">%</button>
+        <button  class="operator" onclick="displayNum('/')" id="divide">&#247;</button>
+        <button  class="number" onclick="displayNum(7)" id="seven">7</button>
+        <button  class="number"  onclick="displayNum(8)"id="eight">8</button>
+        <button  class="number" onclick="displayNum(9)" id="nine">9</button>
+        <button  class="operator" onclick="displayNum('*')" id="multi">&times;</button>
+        <button class="number"  onclick="displayNum(4)"id="four">4</button>
+        <button  class="number"  onclick="displayNum(5)"id="five">5</button>
+        <button  class="number" onclick="displayNum(6)" id="six">6</button>
+        <button  class="operator" onclick="displayNum('-')" id="minus">-</button>
+        <button  class="number" onclick="displayNum(1)" id="one">1</button>
+        <button  class="number" onclick="displayNum(2)" id="two">2</button>
+        <button  class="number" onclick="displayNum(3)" id="three">3</button>
+        <button  class="operator" onclick="displayNum('+')" id="plus">+</button>
+        <button  class="empty"  onclick="displayNum()"id="empty"></button>
+        <button  class="number" onclick="displayNum(0)" id="zero">0</button>
+        <button  class="empty" onclick="displayNum()" id="empty"></button>
+        <button class="operator" onclick="evaluateExpression()" id="Equals">=</button>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
